@@ -1,0 +1,465 @@
+/* ===================common css start ===================== */
+li,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:#FFFFFF;
+}
+body{
+    text-transform: capitalize;
+}
+
+
+.subtitle{
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+    color:#7968EF;
+    margin-bottom: 10px;
+}
+
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 140%;
+    color:#29313D;
+    text-transform: capitalize;
+}
+/* ===================common css end ===================== */
+
+nav{    
+    position: absolute !important;
+    width: 100%;
+    z-index: 9999;
+}
+nav ul li {
+    margin:18px 20px;
+    position: relative;
+    transition: .4s;
+}
+nav ul li a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color:#EFF4FA !important;
+}
+nav ul li:hover a{
+    color:#1BBF00 !important; 
+}
+nav ul li .dropdown{
+    position: absolute !important;
+    top:40px;
+    left: 0;
+    background: #52C5B6;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    transition: .4s;   
+}
+nav ul li .dropdown ul{
+    padding: 0;
+}
+nav ul li .dropdown ul li{
+    margin: 10px 0;
+    border-bottom: 2px solid #30344E;
+    padding: 0 20px;
+}
+nav ul li .dropdown ul li a{
+    color:#FFFFFF !important;
+}
+nav ul li:hover .dropdown{
+    transform: rotateX(0deg);
+}
+nav ul li:hover .arrow{
+    transform: rotateX(0deg);
+}
+nav .nav-item .arrow{
+    margin-left: 8px;
+    font-size: 10px;
+    transform: rotateX(180deg);
+    transition: .4s;
+}
+.nav__contact {
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 14px 28px;
+    background: #6A55EA;
+    border-radius: 18px;
+    color:#FFFFFF;
+    border:1px solid transparent;
+    transition: .4s;
+}
+.nav__contact:hover{
+    background:transparent;
+    border:1px solid #FFFFFF;
+}
+/* =====================banner__start ================= */
+#banner{
+    background: url(../images/banner.png) no-repeat center;
+    background-size: cover;
+    padding-top: 200px;
+    position: relative;
+}
+
+.banner__shape2{
+    width: 100%;
+}
+.banner__box{
+    text-align: center;
+}
+.banner__top_box{
+    display: flex;
+    justify-content: center;
+}
+.banner__top_box_item{
+    padding: 10px 15px;
+    border:1px solid #C4C4C4;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+.banner__top_text{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color:#FFFFFF;
+    margin: 0;
+}
+.banner__hadding{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 130%;
+    color:#FFFFFF;
+    width: 976px;
+    margin: 0 auto;
+    text-transform: capitalize;
+    margin-top: 30px;
+    margin-bottom:  20px;
+}
+.banner__pera{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200%;
+    color:#FFFFFF;
+    width: 780px;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+.banner___input_box{
+    display: inline-block;
+    margin-top: 40px;
+
+}
+.banner__input{
+    padding: 30px 227px 30px 30px;
+    border-radius: 20px;
+    border:1px solid #000000;
+    border-bottom-right-radius:0;
+    border-top-right-radius: 0;
+}
+.banner__input::placeholder{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    color:#29313D;
+}
+.banner__button{
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 100%;
+    color:#FFFFFF;
+    background: #6A55EA;
+    padding: 33px 30px;
+    margin-left: -6px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.banner__shape_box{
+    position: relative;
+}
+.banner__shape3{
+    width: 100%;
+}
+.banner__shape2{
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    left: 0;
+}
+.banner__logo_box{
+    position: relative;
+    z-index: 10;
+    bottom: 100px;
+}
+.banenr__logo_item{
+    text-align: center;
+}
+
+/* =====================banner__end ================= */
+/* =====================service__start ================= */
+.service__title{
+    margin-bottom: 85px;
+    text-align: center;
+}
+.service__title--width{
+    width: 667px;
+    margin: 0 auto;
+}
+.service__img{
+    width: 100%;
+}
+
+.service__pera{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 200%;
+    color:#29313D;
+    width: auto;
+    text-transform: capitalize;
+    margin-bottom: 80px;
+}
+
+.service__box{
+    display: flex;
+    padding: 38px;
+    background: #F0EDFF;
+    border-radius: 20px;
+    margin-bottom: 36px;
+}
+
+.service__box2{
+    background: #FEF6EC;
+}
+
+.service__box3{
+    background: #E8FCF2;
+}
+
+.service__icon_box{
+    width: 25%;
+}
+
+.service__icon{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #7968EF;
+    line-height: 120px;
+    text-align: center;
+}
+
+.service__icon2{
+    background: #F8A64C;
+}
+
+.service__icon3{
+    background: #63DE9D;
+}
+
+.service__item_name{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 140%;
+    color:#29313D;
+}
+
+.service__item_pera{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 200%;
+    color:#29313D;
+    width: 374px;
+    text-transform: capitalize;
+}
+/* =====================service__end ================= */
+/* =====================traffic__start ================= */
+#traffic{
+    margin-top: 100px;
+}
+
+
+.traffic__pera{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200%;
+    color:#29313D;
+    margin-top: 24px;
+}
+
+.traffic__proses{
+    margin-top: 40px;
+}
+
+.traffic__img{
+    width: 100%;
+}
+/* =====================traffic__end ================= */
+/* =====================help__start ================= */
+#help{
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+
+.help__title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.help__item{
+    height: 210px;
+    background: #F8A64C;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 119px;
+}
+
+.help__item__shape {
+    width: 60px;
+    height: 60px;
+    background: #F8A64C;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%,50%) rotate(45deg);
+    z-index: -1;
+}
+.help___item__text{
+    text-align: center;
+}
+.help__item__hadding{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 140%;
+    color:#29313D;
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+.help__item--hadding{
+    color: #FDFDFD;
+}
+.help__item--bg2{
+    background: #F0EDFF;
+}
+.help__item--bg3{
+    background: #E8FCF2;
+}
+.help__item--bg4{
+    background: #FEF6EC;
+}
+.help__hadding{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height:140%;
+    color:#29313D;
+    text-transform: capitalize;
+}
+.help__pera{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200%;
+    color:#29313D;
+    width: 596px;
+    text-transform: capitalize;
+    margin-top: 24px;
+    
+}
+.help__button{
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 100%;
+    color:#FFFFFF;
+    background: #6A55EA;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 48px;
+
+}
+/* =====================help__end ================= */
+/* =====================works__start ================= */
+.works__title{
+    position: relative;
+    margin-bottom: 60px;
+}
+.works__btn{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color:#6A55EA;
+    padding: 20px 30px;
+    border:1px solid #6A55EA;
+    border-radius: 14px;
+    position: absolute;
+    right: 0;
+    top:0;
+}
+.work__img{
+    width: 100%;
+}
+.works__item_title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height:140%;
+    color:#29313D;
+    text-transform: capitalize;
+    margin-top: 24px;
+}
+.works__item_pera{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200%;
+    color:#29313D;
+    width: auto;
+    text-transform: capitalize;
+    margin-top:14px;
+}
+
+
+/* =====================works__end ================= */
+/* =====================pricing start  ================= */
+#pricing{
+    margin-top: 120px;
+}
+.pricing__title{
+    text-align: center;
+}
+.pricing__shape{
+    width: 100%;
+    height: 14px;
+    background: #D2EAFD;
+    border-radius: 14px;
+}
+.pricing__item_1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height:140%;
+    color:#29313D;
+    margin-top: 14px;
+}
+.pricing__item1--fw{
+    font-weight: 600;
+}
+/* =====================pricing end  ================= */
